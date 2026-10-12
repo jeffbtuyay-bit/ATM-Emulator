@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATM Emulator</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>ATM Emulator</h1>
+        <div class="container">
+            <aside class="menu-btn">
+                <button id="resetBtn" class="reset-Btn">Reset</button>
+                <button type="button" id="balance" class="btn" aria-label="Check Your Balance"></button>
+                <button type="button" id="deposit" class="btn" aria-label="Deposit"></button>
+                <button type="button" id="withdraw" class="btn" aria-label="Withdraw"></button>
+                <button id="back" class="btn" aria-label="Back"></button>
+            </aside>
+            <div class="line">       
+                <div class="screen">
+                    <h2>Choose your transaction</h2>
+                    <div class="menu">
+                        <p class="menu-1 menus-style"><i class="fa-solid fa-arrow-left-long"></i> Check Your Balance</p>
+                        <p class="menu-2 menus-style"><i class="fa-solid fa-arrow-left-long"> </i>Deposit</p>
+                        <p class="menu-3 menus-style"><i class="fa-solid fa-arrow-left-long"></i> Withdraw</p>
+                        <p class="menu-4 menus-style"><i class="fa-solid fa-arrow-left-long"></i> Back</p>
+                    </div>
+                    <div class="rain"></div>
+                </div>
+            </div>
+            <div id="keypad" class="keypad">
+                <button class="keypad-btn" style="grid-area: n1;" data-value="1">1</button>
+                <button class="keypad-btn" style="grid-area: n2;" data-value="2">2</button>
+                <button class="keypad-btn" style="grid-area: n3;" data-value="3">3</button>
+                <button class="keypad-btn" style="grid-area: n4;" data-value="4">4</button>
+                <button class="keypad-btn" style="grid-area: n5;" data-value="5">5</button>
+                <button class="keypad-btn" style="grid-area: n6;" data-value="6">6</button>
+                <button class="keypad-btn" style="grid-area: n7;" data-value="7">7</button>
+                <button class="keypad-btn" style="grid-area: n8;" data-value="8">8</button>
+                <button class="keypad-btn" style="grid-area: n9;" data-value="9">9</button>
+                <button class="keypad-btn" style="grid-area: n0;" data-value="0">0</button>
+                <button class="keypad-btn" style="grid-area: n00;" data-value="00">00</button>
+                <button id="delBtn" class="keypad-btn" style="grid-area: del;"><i class="fa-solid fa-delete-left"></i></button>
+                <button id="chckBtn" class="keypad-check" style="grid-area: chck;">OK <i class="fa-solid fa-circle-check"></i></button>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
